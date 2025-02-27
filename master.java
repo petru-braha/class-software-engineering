@@ -25,7 +25,7 @@ class passanger {
 
   public void print_info() {
     System.out.print("mister " + name +
-        " - " + Integer.toString(age));
+        " - " + Integer.toString(age) + " ");
   }
 }
 
