@@ -146,6 +146,17 @@ class combustion extends car {
       int pstart_point, int parrival_point) {
     super(pModel, pColor, pYear, pstart_point, parrival_point);
   }
+
+  private int get_payment() {
+    return 2 * (arrival_point - start_point);
+  }
+
+  public void present_information() {
+    employee.print_info();
+    for (int i = 0; i < index; i++)
+      clients[i].print_info();
+    System.out.println(Integer.toString(get_payment()));
+  }
 }
 
 class electric extends car {
@@ -162,10 +173,10 @@ class electric extends car {
 class master {
   public static void main(String[] args) {
     electric e0 = new electric("bmw", "roz", 2018, 0, 1);
-    electric e1 = new electric("ford", "albastra", 2017);
+    electric e1 = new electric("ford", "albastra", 2017, 5, 6);
 
-    combustion c0 = new combustion("dacia", "gri", 1000);
-    combustion c1 = new combustion("pacia", "neagra", 2001);
+    combustion c0 = new combustion("dacia", "gri", 1000, 5, 6);
+    combustion c1 = new combustion("pacia", "neagra", 2001, 5, 6);
 
     passanger p0 = new passanger(24, "petru");
     passanger p1 = new passanger(25, "bogdan");
