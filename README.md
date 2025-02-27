@@ -1,4 +1,4 @@
 # Software engineering
 
-Lefter Cosmin
-Braha Petru
+- Lefter Cosmin
+- Braha Petru
