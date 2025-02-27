@@ -53,7 +53,7 @@ class driver {
   }
 
   public void print_info() {
-    System.out.print("mister " + name +
+    System.out.println("mister " + name +
         " - " + Integer.toString(age) + " - years of experience: " +
         Integer.toString(experience));
   }
