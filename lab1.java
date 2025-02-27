@@ -125,7 +125,9 @@ abstract class car {
     employee.print_info();
     for (int i = 0; i < index; i++)
       clients[i].print_info();
-    System.out.println(Integer.toString(get_payment()));
+    System.out.println(": to pay " +
+        Integer.toString(get_payment()) +
+        " dollars");
   }
 }
 
@@ -155,7 +157,9 @@ class combustion extends car {
     employee.print_info();
     for (int i = 0; i < index; i++)
       clients[i].print_info();
-    System.out.println(Integer.toString(get_payment()));
+    System.out.println(": to pay " +
+        Integer.toString(get_payment()) +
+        " dollars");
   }
 }
 
@@ -170,13 +174,17 @@ class electric extends car {
   }
 }
 
-class master {
+class lab1 {
   public static void main(String[] args) {
-    electric e0 = new electric("bmw", "roz", 2018, 0, 1);
-    electric e1 = new electric("ford", "albastra", 2017, 5, 6);
+    electric e0 = new electric("bmw", "roz",
+        2018, 0, 3);
+    electric e1 = new electric("ford", "albastra",
+        2017, 5, 6);
 
-    combustion c0 = new combustion("dacia", "gri", 1000, 5, 6);
-    combustion c1 = new combustion("pacia", "neagra", 2001, 5, 6);
+    combustion c0 = new combustion("dacia", "gri",
+        1000, 5, 6);
+    combustion c1 = new combustion("pacia", "neagra",
+        2001, 5, 62);
 
     passanger p0 = new passanger(24, "petru");
     passanger p1 = new passanger(25, "bogdan");
